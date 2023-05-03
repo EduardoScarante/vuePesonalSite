@@ -54,7 +54,7 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .about {
   display: flex;
   flex-direction: column;

@@ -7,10 +7,30 @@ export default {
     return {
       tech:
         [
-          "python",
-          "vue.js - react.js",
-          "js c/ node.js | python | java",
-          "sql - oracle | sqlserver"
+          {
+            path: "",
+            title: "Python"
+          },
+          {
+            path: "",
+            title: "Vue.js"
+          },
+          {
+            path: "",
+            title: "React.js"
+          },
+          {
+            path: "",
+            title: "Node.js"
+          },
+          {
+            path: "",
+            title: "Java"
+          },
+          {
+            path: "",
+            title: "SQL - oracle | sqlserver"
+          }
         ]
     }
   },
@@ -23,21 +43,25 @@ export default {
 
 <template>
   <div class="about">
-    <card v-for="x in tech"/>
-    <card :data=x />
-    
-    This is an Tecnologias page - View <br>
+    <div v-for="x in tech">
+      <card :data="x.title" />
+    </div>
 
-
+    <!--     {{ tech }}
+ -->
   </div>
-
-  <componentTeste />
 </template>
 
 <style>
 .about {
+  width: 600px;
+  height: 90vh;
+
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
   align-items: center;
-}
-</style>
+  text-align: center;
+}</style>

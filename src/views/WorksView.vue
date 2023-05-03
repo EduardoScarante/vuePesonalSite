@@ -65,8 +65,8 @@ export default {
     <div class="cards">
       <button @click="indexCardMenos">&lt</button>
       <div class="card">
-        <h1>{{ infoEmpresa.funções }}</h1>
-        <h2>{{ infoEmpresa.empresa }}</h2>
+        <h1>{{ infoEmpresa.empresa }}</h1>
+        <h2>{{ infoEmpresa.funções }}</h2>
         <h3>{{ infoEmpresa.description }}</h3>
         <h4>{{ infoEmpresa.tempo }} meses</h4>
       </div>
@@ -127,6 +127,7 @@ export default {
     transition: 0.6s ease-in-out;
 
     padding: 25px;
+;
 
   }
 
@@ -134,6 +135,20 @@ export default {
     box-shadow: 0px 0px 3px rgb(253, 253, 253);
   }
 
+  h1{
+    font-size: 24px;
+  }
 
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  h4{
+    font-size: 12px;
+    font-weight: 200;
+  }
 }
 </style>

@@ -15,7 +15,7 @@ export default {
     </div>
 </template>
 
-<style>
+<style scoped>
 .card {
     display: flex;
     flex-direction: column;
@@ -23,19 +23,17 @@ export default {
 
     margin: 10px;
 
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
 
     box-shadow: 3px 3px 3px rgb(7, 7, 7);
     border-radius: 20px;
     background-color: #212121;
     transition: 0.6s ease-in-out;
-
-    padding: 25px;
-
+    
 }
 
 .card:hover {
-    box-shadow: 0px 0px 3px rgb(253, 253, 253);
+    box-shadow: 0px 0px 3px rgb(36, 36, 36);
 }
 </style>
