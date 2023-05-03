@@ -1,38 +1,43 @@
 @import './base.css';
 
+/* 
+font-family: 'Karla', sans-serif;
+font-family: 'Prompt', sans-serif; 
+*/
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5em;
+  padding: 2rem;
 
   font-weight: normal;
-} 
+}
 
 a,
 .green {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: whitesmoke;
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: rgb(205, 87, 69, 0.2);
+    background-color: hsla(0, 0%, 100%, 0.2);
   }
 }
 
 @media (min-width: 1024px) {
   body {
     display: flex;
+    flex-direction: column;
     place-items: center;
+    justify-content: flex-start;
+    
   }
 
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     padding: 0 2rem;
   }
 }
