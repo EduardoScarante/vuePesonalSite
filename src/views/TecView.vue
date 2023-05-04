@@ -8,27 +8,23 @@ export default {
       tech:
         [
           {
-            path: "",
+            path: "../../src/img/logoProg/python.jpg",
             title: "Python"
           },
           {
-            path: "",
+            path: "../../src/img/logoProg/vue.png",
             title: "Vue.js"
           },
           {
-            path: "",
-            title: "React.js"
-          },
-          {
-            path: "",
+            path: "../../src/img/logoProg/node.jpg",
             title: "Node.js"
           },
           {
-            path: "",
+            path: "../../src/img/logoProg/java.png",
             title: "Java"
           },
           {
-            path: "",
+            path: "../../src/img/logoProg/sql.webp",
             title: "SQL - oracle | sqlserver"
           }
         ]
@@ -44,7 +40,7 @@ export default {
 <template>
   <div class="about">
     <div v-for="x in tech">
-      <card :data="x.title" />
+      <card :data="x.title" :path="x.path"/>
     </div>
 
     <!--     {{ tech }}
@@ -52,11 +48,12 @@ export default {
   </div>
 </template>
 
-<style>
+<style scoped>
 .about {
   width: 600px;
-  height: 90vh;
 
+  padding-top: 100px;
+  
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -64,4 +61,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-}</style>
+}
+
+</style>

@@ -21,7 +21,6 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
   header {
     line-height: 1.5;
-    max-height: 100vh;
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -33,6 +32,8 @@ import { RouterLink, RouterView } from 'vue-router'
     font-size: 12px;
     text-align: center;
     margin-top: 0rem;
+    font-weight: 200;
+
   }
 
   nav a.router-link-exact-active {
@@ -41,6 +42,8 @@ import { RouterLink, RouterView } from 'vue-router'
 
   nav a.router-link-exact-active:hover {
     background-color: transparent;
+    font-weight: 400;
+
   }
 
   nav a {

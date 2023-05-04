@@ -1,36 +1,40 @@
 <script>
 
+import blogCard from '../components/blogCard.vue'
+
 export default {
+  components: {
+    blogCard
+  },
   data() {
     return {
-      index: 1,
-
-      imageSrcAyla:
-        [
-          "../../src/img/a1.jpeg",
-          "../../src/img/a2.jpeg",
-          "../../src/img/a3.jpeg",
-          "../../src/img/a4.jpeg",
-          "../../src/img/n1.jpeg",
-          "../../src/img/n2.jpeg",
-          "../../src/img/n3.jpeg",
-          "../../src/img/n4.jpeg"
-        ]
+      infos: [
+        {
+          id: 0,
+          nome: "Ayla",
+          data: "Preguiçosa, antipática e carente!",
+          path: "../../src/img/a1.jpeg"
+        },
+        {
+          id: 1,
+          nome: "Nego",
+          data: "Brincalhão, cheio de energia e carinhoso!",
+          path: "../../src/img/n2.jpeg"
+        },
+        {
+          id: 2,
+          nome: "Isa",
+          data: "Carinhosa, dorminhoca e otimista!",
+          path: "../../src/img/isa.jpeg"
+        },
+        {
+          id: 3,
+          nome: "Eduardo",
+          data: "Chato, preguiçoso e pessimista",
+          path: "../../src/img/edu.png"
+        }
+      ]
     }
-  },
-  methods: {
-    indexImgMais() {
-      this.index == 7 ? this.index = 7 : this.index++
-    },
-    indexImgMenos() {
-      this.index == 0 ? this.index = 0 : this.index--
-    },
-  },
-  computed: {
-    urlCat() {
-      return this.imageSrcAyla[this.index]
-    }
-
   }
 }
 
@@ -38,39 +42,21 @@ export default {
 
 <template>
   <div class="about">
-    Sobre mim
-    <br>
-    Tutor de um casal de catarrentinhos
-    <div class="carrosel">
-      <button @click="indexImgMenos">&lt</button>
-      <img :src='urlCat' alt="" />
-      <button @click="indexImgMais">></button>
+
+    <div v-for="x in infos">
+      <blogCard :nome="infos[x.id].nome" :data="infos[x.id].data" :path="infos[x.id].path" />
     </div>
 
-
-
-    <div>{{ index }}</div>
-    <div>{{ urlCat }}</div>
   </div>
 </template>
 
 <style scoped>
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.carrosel{
-  display: flex;
+  margin: 50px;
   justify-content: center;
-}
 
-.carrosel btn{
-  text-decoration: none;
-}
-
-img {
-  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 </style>

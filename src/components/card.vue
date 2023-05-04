@@ -2,7 +2,8 @@
 
 export default {
     props: {
-        data: String
+        data: String,
+        path: String
     }
 }
 </script>
@@ -10,7 +11,9 @@ export default {
 
 <template>
     <div class="card">
-        <img :src="img" alt="">
+        <div class="imgCard">
+            <img :src="path" alt="">
+        </div>
         {{ data }}
     </div>
 </template>
@@ -30,7 +33,24 @@ export default {
     border-radius: 20px;
     background-color: #212121;
     transition: 0.6s ease-in-out;
-    
+
+}
+
+img {
+    height: 70px;
+    width: 125px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 2px 2px 5px black;
+}
+
+.imgCard {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card:hover {

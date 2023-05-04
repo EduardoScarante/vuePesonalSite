@@ -4,17 +4,25 @@
 <template>
   <body>
 
-    <img src="../../src/img/photo.jpg" alt="">
+    <div class="photo">
+      <img src="../../src/img/photo.jpg" alt="">
+    </div>
 
     <br>
-
     <div class="subtitle">
       Full Stack Developer
     </div>
-
-
     <div class="title">
       Eduardo Scarante
+    </div>
+
+    <div class="iconsContact">
+      <a href="">
+        <img src="../../src/img/icons/github.png" alt="">
+      </a>
+      <a href="">
+        <img src="../../src/img/icons/linkedin.webp" alt="">
+      </a>
     </div>
 
 
@@ -33,7 +41,7 @@
   letter-spacing: 3px;
 }
 
-img {
+.photo img {
   height: 100px;
   border-radius: 200px;
 
@@ -47,11 +55,22 @@ body {
   font-weight: 200;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   color: white;
+}
 
-  padding: 20px;
+.iconsContact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.iconsContact img {
+  height: 25px;
+  border-radius: 30px;
+  padding: 10px;
 }
 </style>

@@ -76,79 +76,81 @@ export default {
   </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
+<style scoped>
 
-  .title {
-    text-align: center;
-  }
+.title {
+  text-align: center;
+}
 
-  .cards {
-    max-width: 800px;
-    height: 100vh;
+.cards {
+  max-width: 800px;
+  height: 100vh;
 
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;  
+}
 
-  }
-
-  .cards button {
-    background-color: black;
+.cards button {
+  background-color: black;
     color: white;
-    font-weight: 800;
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    text-decoration: none;
-    transition: 0.6s ease-in-out;
-  }
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  transition: 0.6s ease-in-out;
+}
 
-  .cards button:hover {
-    background-color: red;
-  }
+.cards button:hover {
+  background-color: red;
+}
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-    margin: 10px;
+  
+  height: 300px;
+  width: 400px;
+  
+  margin: 10px;
+  padding: 25px;
 
-    height: 300px;
-    width: 400px;
+  box-shadow: 3px 3px 3px rgb(7, 7, 7);
+  border-radius: 20px;
+  background-color: #212121;
+  transition: 0.6s ease-in-out;
+}
 
-    box-shadow: 3px 3px 3px rgb(7, 7, 7);
-    border-radius: 20px;
-    background-color: #212121;
-    transition: 0.6s ease-in-out;
+.card:hover {
+  box-shadow: 0px 0px 3px rgb(253, 253, 253);
+}
 
-    padding: 25px;
-;
+h1 {
+  font-size: 24px;
+  font-weight: 400;
 
-  }
+}
 
-  .card:hover {
-    box-shadow: 0px 0px 3px rgb(253, 253, 253);
-  }
+h2 {
+  font-size: 20px;
+  font-weight: 200;
 
-  h1{
-    font-size: 24px;
-  }
+}
 
-  h2{
-    font-size: 20px;
-  }
-  h3{
-    font-size: 16px;
-    font-weight: 400;
-  }
-  h4{
-    font-size: 12px;
-    font-weight: 200;
-  }
+h3 {
+  font-size: 16px;
+  font-weight: 200;
+
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 200;
 }
 </style>
