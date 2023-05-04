@@ -33,7 +33,6 @@ import { RouterLink, RouterView } from 'vue-router'
     text-align: center;
     margin-top: 0rem;
     font-weight: 200;
-
   }
 
   nav a.router-link-exact-active {

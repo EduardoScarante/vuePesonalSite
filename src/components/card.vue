@@ -3,7 +3,8 @@
 export default {
     props: {
         data: String,
-        path: String
+        path: String,
+        subtitle: String
     }
 }
 </script>
@@ -14,7 +15,14 @@ export default {
         <div class="imgCard">
             <img :src="path" alt="">
         </div>
-        {{ data }}
+        <div class="title">
+            <div class="data">
+                {{ data }}
+            </div>
+            <div class="des">
+                {{ subtitle }}
+            </div>
+        </div>
     </div>
 </template>
 
@@ -55,5 +63,13 @@ img {
 
 .card:hover {
     box-shadow: 0px 0px 3px rgb(36, 36, 36);
+}
+
+.data{
+    font-weight: 800;
+    padding-top: 10px;
+}
+.des{
+    font-weight: 400;
 }
 </style>

@@ -12,25 +12,29 @@ export default {
         {
           id: 0,
           nome: "Ayla",
+          profissao: "Farrejadora de petisco",
           data: "Preguiçosa, antipática e carente!",
           path: "../../src/img/a1.jpeg"
         },
         {
           id: 1,
           nome: "Nego",
+          profissao: "Aquecedor de cadeira",
           data: "Brincalhão, cheio de energia e carinhoso!",
           path: "../../src/img/n2.jpeg"
         },
         {
           id: 2,
           nome: "Isa",
+          profissao: "Técnica em Enfermagem",
           data: "Carinhosa, dorminhoca e otimista!",
           path: "../../src/img/isa.jpeg"
         },
         {
           id: 3,
           nome: "Eduardo",
-          data: "Chato, preguiçoso e pessimista",
+          profissao: "Quiçá um desenvolvedor",
+          data: "Barrigudo, preguiçoso e pessimista",
           path: "../../src/img/edu.png"
         }
       ]
@@ -44,7 +48,19 @@ export default {
   <div class="about">
 
     <div v-for="x in infos">
-      <blogCard :nome="infos[x.id].nome" :data="infos[x.id].data" :path="infos[x.id].path" />
+      <blogCard 
+      :nome="infos[x.id].nome" 
+      :profissao="infos[x.id].profissao" 
+      :data="infos[x.id].data"
+      :path="infos[x.id].path" />
+    </div>
+
+    <div class="iframe">
+      <iframe src="https://giphy.com/embed/yPRo73ILrGjny" width="200" frameBorder="0" class="giphy-embed">
+      </iframe>
+
+      <iframe src="https://giphy.com/embed/ySpxjJmsq9gsw" width="200" frameborder="0" class="giphy-embed">
+      </iframe>
     </div>
 
   </div>
@@ -59,4 +75,5 @@ export default {
   flex-wrap: wrap;
   align-items: center;
 }
+
 </style>

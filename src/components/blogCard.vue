@@ -5,6 +5,7 @@ import { stringifyQuery } from 'vue-router';
 export default {
     props: {
         nome: String,
+        profissao: String,
         data: String,
         path: String
     }
@@ -18,13 +19,17 @@ export default {
             <img :src="path" alt="">
         </div>
         <div class="textCard">
-            <div style="font-weight: 400; margin-bottom: 5px;">
+            <div class="info" style="font-weight: 800">
                 {{ nome }}
             </div>
-            <div>
+            <div class="info" style="font-weight: 400">
                 {{ data }}
             </div>
+            <div class="info" style="font-weight: 200">
+                Profissão: {{ profissao }}
+            </div>
         </div>
+
     </div>
 </template>
 
@@ -56,6 +61,11 @@ img {
 
     box-shadow: 2px 2px 5px black;
 
+}
+
+.info{
+    font-weight: 800; 
+    margin-bottom: 5px;
 }
 
 .imgCard {
