@@ -4,7 +4,6 @@ export default {
   data() {
     return {
       index: 0,
-      tempo: 0,
 
       empresaArray: [
         {

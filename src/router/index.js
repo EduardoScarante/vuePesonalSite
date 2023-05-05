@@ -31,6 +31,11 @@ const router = createRouter({
       path: '/tec',
       name: 'tec',
       component: () => import('../views/TecView.vue')
+    },
+    {
+      path: '/reqteste',
+      name: 'req',
+      component: () => import('../views/ReqTesteView.vue')
     }
   ]
 })

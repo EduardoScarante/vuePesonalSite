@@ -39,7 +39,18 @@ export default {
         }
       ]
     }
-  }
+  }/* ,
+  mounted(){
+    console.log('montou')
+    fetch("")
+    // const res = fetch()
+    // this.infos = res.data
+  },
+  unmounted(){
+    console.log('desmontou')
+    // const res = fetch()
+    // this.infos = res.data
+  } */
 }
 
 </script>
