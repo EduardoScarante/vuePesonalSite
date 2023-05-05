@@ -4,6 +4,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
+<div class="all">
   <header>
     <nav>
       <RouterLink to="/">Home</RouterLink>
@@ -17,31 +18,34 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <RouterView />
 
-
-  <lottie-player class="lottie" src="../src/img/lotties/bg.json" background="transparent" speed="1" loop autoplay>
-  </lottie-player>
-
+  <div class="lottie">
+    <lottie-player src="../src/img/lotties/star.json" background="transparent" speed="1" loop autoplay>
+    </lottie-player>
+  </div>
+</div>
 </template>
 
 
 
 <style scoped>
-.lottie {
-  position: absolute;
-  top: 0px;
-  
-  background-color: #1D1D1D;
+.all{
+  overflow: hidden;
+}
 
-  height: 100vh;
-/*   overflow: hidden;
- */
+.lottie{
+  position: absolute;
+  top: -250px;
+
+  transform: rotate(180deg);
+  
+  width: 100vw;
+  
   z-index: -1;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin: auto;
 }
-
 header {
   line-height: 1.5;
 
