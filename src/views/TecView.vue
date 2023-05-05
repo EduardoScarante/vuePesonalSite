@@ -1,22 +1,75 @@
-<script>
 
-  export default{
-    components: {
-    }  
+<script>
+import card from '../components/card.vue';
+
+export default {
+  data() {
+    return {
+      tech:
+        [
+          {
+            path: "../../src/img/logoProg/vue.png",
+            title: "Vue.js",
+            subtitle: "Front End"
+          },
+          {
+            path: "../../src/img/logoProg/node.jpg",
+            title: "Node.js",
+            subtitle: "Back End"
+          },
+          {
+            path: "../../src/img/logoProg/python.jpg",
+            title: "Python",
+            subtitle: "Script / Automatização"
+          },
+          {
+            path: "../../src/img/logoProg/sql.webp",
+            title: "SQL - Oracle | SQLserver ",
+            subtitle: "Data"
+          },
+          {
+            path: "../../src/img/logoProg/pb.png",
+            title: "Power BI",
+            subtitle: "Data Analytics"
+          },
+          {
+            path: "../../src/img/logoProg/java.webp",
+            title: "Java",
+            subtitle: "Back End"
+          }
+        ]
+    }
+  },
+  components: {
+    card
   }
+}
 
 </script>
 
 <template>
   <div class="about">
-    This is an Tecnologias page - View
-  </div>
+    <div v-for="x in tech">
+      <card :data="x.title" :path="x.path" :subtitle="x.subtitle" />
+    </div>
 
-  <componentTeste/>
+    <!--     {{ tech }}
+ -->
+  </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
+<style scoped>
+.about {
+  width: 600px;
 
+  padding-top: 100px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 </style>

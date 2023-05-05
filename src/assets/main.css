@@ -1,38 +1,25 @@
 @import './base.css';
 
+/* 
+font-family: 'Karla', sans-serif;
+font-family: 'Prompt', sans-serif; 
+*/
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 0.5em;
+  padding: 0 2rem;
 
-  font-weight: normal;
-} 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  place-items: center;
+
+}
 
 a,
 .green {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: whitesmoke;
   transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: rgb(205, 87, 69, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }

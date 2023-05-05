@@ -1,25 +1,90 @@
 <script>
-  import componentTeste from '../components/componentTeste.vue';
 
+import blogCard from '../components/blogCard.vue'
 
-  export default{
-    components: {
-      componentTeste
-    }  
-  }
+export default {
+  components: {
+    blogCard
+  },
+  data() {
+    return {
+      infos: [
+        {
+          id: 0,
+          nome: "Ayla",
+          profissao: "Farrejadora de petisco",
+          data: "Preguiçosa, antipática e carente!",
+          path: "../../src/img/a1.jpeg"
+        },
+        {
+          id: 1,
+          nome: "Nego",
+          profissao: "Aquecedor de cadeira",
+          data: "Brincalhão, cheio de energia e carinhoso!",
+          path: "../../src/img/n2.jpeg"
+        },
+        {
+          id: 2,
+          nome: "Isa",
+          profissao: "Técnica em Enfermagem",
+          data: "Carinhosa, dorminhoca e otimista!",
+          path: "../../src/img/isa.jpeg"
+        },
+        {
+          id: 3,
+          nome: "Eduardo",
+          profissao: "Quiçá um desenvolvedor",
+          data: "Barrigudo, preguiçoso e pessimista",
+          path: "../../src/img/edu.png"
+        }
+      ]
+    }
+  }/* ,
+  mounted(){
+    console.log('montou')
+    fetch("")
+    // const res = fetch()
+    // this.infos = res.data
+  },
+  unmounted(){
+    console.log('desmontou')
+    // const res = fetch()
+    // this.infos = res.data
+  } */
+}
 
 </script>
 
 <template>
   <div class="about">
-    
-  </div>
 
-  <componentTeste/>
+    <div v-for="x in infos">
+      <blogCard 
+      :nome="infos[x.id].nome" 
+      :profissao="infos[x.id].profissao" 
+      :data="infos[x.id].data"
+      :path="infos[x.id].path" />
+    </div>
+
+    <div class="iframe">
+      <iframe src="https://giphy.com/embed/yPRo73ILrGjny" width="200" frameBorder="0" class="giphy-embed">
+      </iframe>
+
+      <iframe src="https://giphy.com/embed/ySpxjJmsq9gsw" width="200" frameborder="0" class="giphy-embed">
+      </iframe>
+    </div>
+
+  </div>
 </template>
 
-<style>
-@media (min-width: 1024px) {
+<style scoped>
+.about {
+  margin: 50px;
+  justify-content: center;
 
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
 </style>
