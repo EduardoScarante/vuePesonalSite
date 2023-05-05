@@ -76,6 +76,10 @@ export default {
 </template>
 
 <style scoped>
+.work {
+  display: flex;
+  justify-content: center;
+}
 
 .title {
   text-align: center;
@@ -83,18 +87,18 @@ export default {
 
 .cards {
   max-width: 800px;
-  height: 100vh;
+  padding-top: 80px;
 
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;  
+  text-align: center;
 }
 
 .cards button {
   background-color: black;
-    color: white;
+  color: white;
   font-weight: 800;
   width: 30px;
   height: 30px;
@@ -113,10 +117,10 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
 
-  
+
   height: 300px;
   width: 400px;
-  
+
   margin: 10px;
   padding: 25px;
 
