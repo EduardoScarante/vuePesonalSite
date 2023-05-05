@@ -53,16 +53,35 @@ export default {
 
     </table>
 
-    <button @click="click">POST</button>
+    <!--     <button @click="click">POST</button>
+ -->
   </body>
 </template>
 
 <style scoped>
+body {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 td {
   font-weight: 400;
+  width: 150px;
+  text-align: left;
+
+}
+
+table{
+  border: 1px solid gray;
 }
 
 .c {
+  text-align: center;
   font-weight: 800;
+  border-bottom: 1px solid gray;
 }
 </style>

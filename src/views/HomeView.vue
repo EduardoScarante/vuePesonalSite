@@ -17,11 +17,14 @@
     </div>
 
     <div class="iconsContact">
-      <a href="">
+      <a href="https://github.com/EduardoScarante" target="_blank">
         <img src="../../src/img/icons/github.png" alt="">
       </a>
-      <a href="">
+      <a href="https://www.linkedin.com/in/eduardoscarante/" target="_blank">
         <img src="../../src/img/icons/linkedin.webp" alt="">
+      </a>
+      <a href="https://wa.me/+5541987560475">
+        <img src="../../src/img/icons/wpp.webp" alt="">
       </a>
     </div>
 
@@ -51,6 +54,8 @@
 }
 
 body {
+  height: 90vh;
+
   font-family: 'Karla', sans-serif;
   font-weight: 200;
 

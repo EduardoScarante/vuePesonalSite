@@ -52,20 +52,21 @@ export default {
     <div v-for="x in tech">
       <card :data="x.title" :path="x.path" :subtitle="x.subtitle" />
     </div>
-
-    <!--     {{ tech }}
- -->
   </div>
 </template>
 
 <style scoped>
 .about {
+
   width: 600px;
+  padding-top: 80px;
 
-  padding-top: 100px;
-
+  margin: auto;
+  place-items: center;
+  
   display: flex;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 
   justify-content: center;
