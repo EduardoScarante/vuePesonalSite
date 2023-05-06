@@ -14,28 +14,28 @@ export default {
           nome: "Ayla",
           profissao: "Farrejadora de petisco",
           data: "Preguiçosa, antipática e carente!",
-          path: "../src/img/a1.jpeg"
+          path: "./src/img/a1.jpeg"
         },
         {
           id: 1,
           nome: "Nego",
           profissao: "Aquecedor de cadeira",
           data: "Brincalhão, cheio de energia e carinhoso!",
-          path: "../src/img/n2.jpeg"
+          path: "./src/img/n2.jpeg"
         },
         {
           id: 2,
           nome: "Isa",
           profissao: "Técnica em Enfermagem",
           data: "Carinhosa, dorminhoca e otimista!",
-          path: "../src/img/isa.jpeg"
+          path: "./src/img/isa.jpeg"
         },
         {
           id: 3,
           nome: "Eduardo",
           profissao: "Quiçá um desenvolvedor",
           data: "Barrigudo, preguiçoso e pessimista",
-          path: "../src/img/edu.png"
+          path: "./src/img/edu.png"
         }
       ]
     }
