@@ -8,32 +8,32 @@ export default {
       tech:
         [
           {
-            path: "../../src/img/logoProg/vue.png",
+            path: "../src/img/logoProg/vue.png",
             title: "Vue.js",
             subtitle: "Front End"
           },
           {
-            path: "../../src/img/logoProg/node.jpg",
+            path: "../src/img/logoProg/node.jpg",
             title: "Node.js",
             subtitle: "Back End"
           },
           {
-            path: "../../src/img/logoProg/python.jpg",
+            path: "../src/img/logoProg/python.jpg",
             title: "Python",
             subtitle: "Script / Automatização"
           },
           {
-            path: "../../src/img/logoProg/sql.webp",
+            path: "../src/img/logoProg/sql.webp",
             title: "SQL - Oracle | SQLserver ",
             subtitle: "Data"
           },
           {
-            path: "../../src/img/logoProg/pb.png",
+            path: "../src/img/logoProg/pb.png",
             title: "Power BI",
             subtitle: "Data Analytics"
           },
           {
-            path: "../../src/img/logoProg/java.webp",
+            path: "../src/img/logoProg/java.webp",
             title: "Java",
             subtitle: "Back End"
           }
