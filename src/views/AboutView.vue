@@ -33,8 +33,8 @@ export default {
         {
           id: 3,
           nome: "Eduardo",
-          profissao: "Quiçá um desenvolvedor",
-          data: "Barrigudo, preguiçoso e pessimista",
+          profissao: "Quiçá um desenvolvedor e quase Eng. Elétrico",
+          data: "Barrigudo, criativo e sonhador!",
           path: "./src/img/edu.png"
         }
       ]
@@ -85,6 +85,13 @@ export default {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+}
+.iframe{
+  width: 450px;
+
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 </style>
