@@ -2,38 +2,45 @@
 <script>
 import card from '../components/card.vue';
 
+import Vue from '@/img/logoProg/vue.png';
+import Node from '@/img/logoProg/node.jpg';
+import Python from '@/img/logoProg/python.jpg';
+import SQL from '@/img/logoProg/sql.webp';
+import Power from '@/img/logoProg/pb.png';
+import Java from '@/img/logoProg/java.webp';
+
 export default {
   data() {
     return {
       tech:
         [
           {
-            path: "./src/img/logoProg/vue.png",
+            path: Vue,
             title: "Vue JS",
             subtitle: "Front End"
           },
           {
-            path: "./src/img/logoProg/node.jpg",
+            path: Node,
             title: "Node JS",
             subtitle: "Back End"
           },
           {
-            path: "./src/img/logoProg/python.jpg",
+            path: Python,
             title: "Python",
             subtitle: "Script / Automatização"
           },
           {
-            path: "./src/img/logoProg/sql.webp",
+            path: SQL,
             title: "SQL",
             subtitle: "Análises de Dados"
           },
           {
-            path: "./src/img/logoProg/pb.png",
+            path: Power,
             title: "Power BI",
             subtitle: "Data Analytics"
           },
           {
-            path: "./src/img/logoProg/java.webp",
+            path: Java,
             title: "Java",
             subtitle: "Back End"
           }
@@ -63,7 +70,7 @@ export default {
 
   margin: auto;
   place-items: center;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
