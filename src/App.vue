@@ -12,7 +12,6 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/tec">Technologies</RouterLink>
       <RouterLink to="/about">About Me</RouterLink>
       <RouterLink to="/reqteste">Request - teste</RouterLink>
-
     </nav>
   </header>
 
