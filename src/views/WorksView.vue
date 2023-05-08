@@ -9,33 +9,33 @@ export default {
         {
           empresa: "JMalucelli",
           funções: "Estagiário",
-          description: "Primeiro contato com programação, C++ e Python para montagem de scripts",
+          description: "Primeiro contato com a programação, C++, Python e VBA para desenvolvimento de scripts e análises de dados.",
           tempo: "1 ano e 4 meses"
         },
         {
           empresa: "Copel",
           funções: "Estágio",
-          description: "Primeiros códigos em PHP, usando xampp e mysql",
+          description: "Primeiros códigos em PHP, Xampp e MySQL",
           tempo: "3 meses"
         },
         {
           empresa: "Just in Time Engenharia",
           funções: "Estágio 'Chefe'",
-          description: "Desenvolvimento mobile via React Native e Ionic. Python e JS para script",
+          description: "Desenvolvimento mobile com React Native e Ionic, Python para script e VBA para automatizações.",
           tempo: "2 anos e 2 meses",
 
         },
         {
           empresa: "Elco Engenharia",
           funções: "Estágio",
-          description: "SQL para Oracle, desenvolvimento de relatórios - Power BI, scripts python para automatização de tarefas",
+          description: "SQL para Oracle no ERP Mega, desenvolvimento de relatórios em Power BI, scripts Python para automatização de tarefas e análises de dados.",
           tempo: "1 ano",
 
         },
         {
           empresa: "4network",
           funções: "Desenvolvedor",
-          description: "Php, postgress, Vue",
+          description: "Contato maior com Java Script (Realidade aumentada), uso de PHP para manutenção nos sistemas legados e novos scripts, análises de dados para dashboards no Qlik Sense e Power BI vindo do banco de dados Postgress, treinamento em Vue.JS para FrontEnd e em Java para BackEnd",
           tempo: "6 meses"
         }
       ]
@@ -64,9 +64,9 @@ export default {
     <div class="cards">
       <button @click="indexCardMenos">&lt</button>
       <div class="card">
-        <h1>{{ infoEmpresa.empresa }}</h1>
-        <h2>{{ infoEmpresa.funções }}</h2>
-        <h3>{{ infoEmpresa.description }}</h3>
+        <h1>{{ infoEmpresa.empresa }}</h1><br>
+        <h2>{{ infoEmpresa.funções }}</h2><br>
+        <h3>{{ infoEmpresa.description }}</h3><br>
         <h4>{{ infoEmpresa.tempo }} meses</h4>
       </div>
       <button @click="indexCardMais">></button>
@@ -115,7 +115,7 @@ export default {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
 
 
   height: 300px;
@@ -126,7 +126,7 @@ export default {
 
   box-shadow: 3px 3px 3px rgb(7, 7, 7);
   border-radius: 20px;
-  background-color: #212121;
+  background-color: rgba(0, 0, 0, 0.2);
   transition: 0.6s ease-in-out;
 }
 

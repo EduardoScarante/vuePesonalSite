@@ -9,12 +9,12 @@ export default {
         [
           {
             path: "./src/img/logoProg/vue.png",
-            title: "Vue.js",
+            title: "Vue JS",
             subtitle: "Front End"
           },
           {
             path: "./src/img/logoProg/node.jpg",
-            title: "Node.js",
+            title: "Node JS",
             subtitle: "Back End"
           },
           {
@@ -24,8 +24,8 @@ export default {
           },
           {
             path: "./src/img/logoProg/sql.webp",
-            title: "SQL - Oracle | SQLserver ",
-            subtitle: "Data"
+            title: "SQL",
+            subtitle: "Análises de Dados"
           },
           {
             path: "./src/img/logoProg/pb.png",
