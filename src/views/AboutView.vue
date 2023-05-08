@@ -1,6 +1,11 @@
 <script>
 
 import blogCard from '../components/blogCard.vue'
+import aylaPhoto from '/src/img/a1.jpeg'
+import negoPhoto from '/src/img/n2.jpeg'
+import isaPhoto from '/src/img/isa.jpeg'
+import eduPhoto from '/src/img/edu.png'
+
 
 export default {
   components: {
@@ -14,28 +19,28 @@ export default {
           nome: "Ayla",
           profissao: "Farrejadora de petisco",
           data: "Preguiçosa, antipática e carente!",
-          path: "./src/img/a1.jpeg"
+          path: aylaPhoto
         },
         {
           id: 1,
           nome: "Nego",
           profissao: "Aquecedor de cadeira",
           data: "Brincalhão, cheio de energia e carinhoso!",
-          path: "./src/img/n2.jpeg"
+          path: negoPhoto
         },
         {
           id: 2,
           nome: "Isa",
           profissao: "Técnica em Enfermagem",
           data: "Carinhosa, dorminhoca e otimista!",
-          path: "./src/img/isa.jpeg"
+          path: isaPhoto
         },
         {
           id: 3,
           nome: "Eduardo",
           profissao: "Quiçá um desenvolvedor e quase Eng. Elétrico",
           data: "Barrigudo, criativo e sonhador!",
-          path: "./src/img/edu.png"
+          path: eduPhoto
         }
       ]
     }

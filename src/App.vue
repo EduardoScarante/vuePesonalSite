@@ -1,5 +1,14 @@
 <script>
 import { RouterLink, RouterView } from 'vue-router'
+import lotties from '@/img/lotties/star.json'
+
+export default{
+  data() {
+    return {
+      lotties
+    }
+  }
+}
 
 </script>
 
@@ -19,7 +28,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <RouterView />
 
   <div class="lottie">
-    <lottie-player src="./src/img/lotties/star.json" background="transparent" speed="1" loop autoplay>
+    <lottie-player :src="lotties" background="transparent" speed="1" loop autoplay>
     </lottie-player>
   </div>
 </div>
