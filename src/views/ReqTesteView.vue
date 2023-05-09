@@ -1,4 +1,84 @@
 <script>
+import card from "../components/cardproj.vue";
+
+import Vue from "@/img/logoProg/vue.png";
+import Node from "@/img/logoProg/node.jpg";
+import Python from "@/img/logoProg/python.jpg";
+import SQL from "@/img/logoProg/sql.webp";
+import Power from "@/img/logoProg/pb.png";
+import Java from "@/img/logoProg/java.webp";
+
+export default {
+  data() {
+    return {
+      tech: [
+        {
+          // path: Vue,
+          title: "Projeto",
+          subtitle: "1",
+        },
+        {
+          // path: Node,
+          title: "Projeto",
+          subtitle: "2",
+        },
+        {
+          // path: Python,
+          title: "Projeto",
+          subtitle: "3",
+        },
+        {
+          // path: SQL,
+          title: "Projeto",
+          subtitle: "4",
+        },
+        {
+          // path: Power,
+          title: "Projeto",
+          subtitle: "5",
+        },
+        {
+          // path: Java,
+          title: "Projeto",
+          subtitle: "6",
+        },
+      ],
+    };
+  },
+  components: {
+    card,
+  },
+};
+</script>
+
+<template>
+  <div class="about">
+    <div v-for="x in tech">
+      <card :data="x.title" :path="x.path" :subtitle="x.subtitle" />
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.about {
+  width: 600px;
+  padding-top: 80px;
+
+  margin: auto;
+  place-items: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+</style>
+
+<!-- <script>
 
 export default {
   data() {
@@ -20,9 +100,13 @@ export default {
       alert("Algo deu errado, tente mais tarde")
     })
   },
-  /*   unmounted() {
+
+
+  *(comentado originalmente)  unmounted() {
       console.log("desmontou");
-    }, */
+    }, *
+
+
   methods: {
     click() {
       console.log("fetch Post fictício");
@@ -53,8 +137,8 @@ export default {
 
     </table>
 
-    <!--     <button @click="click">POST</button>
- -->
+    *comentado originalmente  <button @click="click">POST</button>  *
+ 
   </body>
 </template>
 
@@ -82,6 +166,6 @@ table{
 .c {
   text-align: center;
   font-weight: 800;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid gray;J
 }
-</style>
+</style> -->
