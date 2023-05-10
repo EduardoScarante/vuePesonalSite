@@ -54,7 +54,8 @@
 }
 
 body {
-  height: 90vh;
+  /* height: 90vh; */
+  margin-top: 10rem;
 
   font-family: 'Karla', sans-serif;
   font-weight: 200;
@@ -65,6 +66,7 @@ body {
   align-items: center;
 
   color: white;
+  
 }
 
 .iconsContact {
