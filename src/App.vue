@@ -25,10 +25,10 @@ export default {
 
     <RouterView />
 
-    <div class="lottie">
+<!--     <div class="lottie">
       <lottie-player :src="lotties" background="transparent" speed="1" loop autoplay>
       </lottie-player>
-    </div>
+    </div> -->
   </div>
 </template>
 

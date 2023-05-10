@@ -1,13 +1,6 @@
 <script>
 import card from "../components/cardproj.vue";
 
-import Vue from "@/img/logoProg/vue.png";
-import Node from "@/img/logoProg/node.jpg";
-import Python from "@/img/logoProg/python.jpg";
-import SQL from "@/img/logoProg/sql.webp";
-import Power from "@/img/logoProg/pb.png";
-import Java from "@/img/logoProg/java.webp";
-
 export default {
   data() {
     return {
@@ -57,12 +50,12 @@ export default {
       <card :data="x.title" :path="x.path" :subtitle="x.subtitle" />
     </div>
   </div>
+  <br>
 </template>
 
 <style scoped>
 .about {
-  width: 600px;
-  padding-top: 80px;
+  width: 800px;
 
   margin: auto;
   place-items: center;
