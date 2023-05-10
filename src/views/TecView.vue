@@ -58,31 +58,26 @@ export default {
     </div>
   </div>
 
-  <div class="chart">
-    <span>Vue JS</span>
-    <footer>
-      <div data-width="95%" style="width: 95%"></div>
-    </footer>
-  </div>
+
 
   <div class="chart">
     <span>Node JS</span>
     <footer>
-      <div data-width="95%" style="width: 95%"></div>
+      <div data-width="95%" style="width: 80%"></div>
     </footer>
   </div>
 
   <div class="chart">
     <span>Python</span>
     <footer>
-      <div data-width="95%" style="width: 95%"></div>
+      <div data-width="95%" style="width: 75%"></div>
     </footer>
   </div>
 
   <div class="chart">
     <span>SQL</span>
     <footer>
-      <div data-width="95%" style="width: 95%"></div>
+      <div data-width="95%" style="width: 90%"></div>
     </footer>
   </div>
 
@@ -96,7 +91,7 @@ export default {
   <div class="chart">
     <span>Java</span>
     <footer>
-      <div data-width="95%" style="width: 95%"></div>
+      <div data-width="95%" style="width: 30%"></div>
     </footer>
   </div>
 </template>
@@ -104,7 +99,6 @@ export default {
 <style scoped>
 .about {
   width: 600px;
-  padding-top: 80px;
 
   margin: auto;
   place-items: center;
